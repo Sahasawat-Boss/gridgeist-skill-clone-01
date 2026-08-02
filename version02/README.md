@@ -19,9 +19,11 @@ product-native interface direction rather than generic SaaS aesthetics.
 - **Product-native motif** — release evidence: deploys, latency traces, adoption
   curves, and incident state.
 
-The visual system (paper canvas, cobalt action, acid focus, Inter + DM Mono,
-visible-grid hero) is derived from the reference Gridgeist site and re-applied to
-Cadence's own content — principles extracted, not a literal copy.
+The visual system — **Nebula Console**: dark void canvas, mint/violet/coral signal
+hues, floating glass panels, Space Grotesk + JetBrains Mono, dot-lattice hero — is
+original to this POC. Structural principles (exposed metadata, numbered sections,
+a before/after diagnostic) were extracted from the Gridgeist reference; the theme,
+palette, typography, and surface treatment are not shared with it.
 
 ## Structure
 
@@ -30,7 +32,7 @@ gridgeist-poc-01/
 ├── index.html      # Single-page site, semantic sections 01–08
 ├── styles.css      # Design tokens + composition + responsive rules
 ├── script.js       # Hero axis, before/after toggle, reveal, clock, count-up, copy
-├── favicon.svg     # Grid-mark favicon
+├── favicon.svg     # Signal-mark favicon
 ├── DESIGN.md        # Compact system contract (tokens + component grammar)
 └── README.md
 ```
@@ -49,7 +51,7 @@ npx serve .
 
 Then visit <http://localhost:8080>.
 
-Fonts (Inter, DM Mono) load from Google Fonts at runtime; system fallbacks are
+Fonts (Space Grotesk, JetBrains Mono) load from Google Fonts at runtime; system fallbacks are
 defined so the layout holds if the network is unavailable.
 
 ## Sections
@@ -68,10 +70,10 @@ defined so the layout holds if the network is unavailable.
 ## Accessibility & resilience
 
 - Semantic landmarks, skip link, labelled sections, keyboard-operable controls.
-- Visible focus rings via the acid focus token; state cues never rely on color alone.
-- `prefers-reduced-motion` disables the reveal, hero tracking, and count-up.
-- `forced-colors` (Windows High Contrast) fallbacks for grid and inverted surfaces.
-- Responsive recomposition at 800 / 480 / 360 px — layouts reorder, they don't shrink.
+- Visible focus rings via the violet focus token; state cues never rely on color alone.
+- `prefers-reduced-motion` disables the reveal, hero tracking, aurora drift, and count-up.
+- `forced-colors` (Windows High Contrast) fallbacks flatten gradient text and accent fills.
+- Responsive recomposition at 1080 / 800 / 480 / 360 px — layouts reorder, they don't shrink.
 
 ## Verification
 
