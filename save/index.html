@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cadence turns deploys, latency, errors, and adoption into one legible release signal for engineering teams." />
+    <meta name="theme-color" content="#f2f0e9" />
+    <title>Cadence — Ship in cadence</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cadence" />
+    <meta property="og:title" content="Cadence — Ship in cadence" />
+    <meta property="og:description" content="Release intelligence for engineering teams. Read the release, not the release notes." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cadence — Ship in cadence" />
+    <meta name="twitter:description" content="Release intelligence for engineering teams." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Cadence home">CADENCE<span aria-hidden="true">®</span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#premise">Premise</a>
+        <a href="#loop">Loop</a>
+        <a href="#signals">Signals</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#start">Get started</a>
+      </nav>
+      <details class="mobile-menu">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="#premise">Premise</a>
+          <a href="#loop">Loop</a>
+          <a href="#signals">Signals</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#start">Get started</a>
+        </nav>
+      </details>
+      <div class="header-actions">
+        <span class="header-clock" aria-hidden="true" data-clock>--:--:-- UTC</span>
+        <a class="header-github" href="#start">Get started ↗</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true">
+          <span class="axis axis-x"></span>
+          <span class="axis axis-y"></span>
+          <span class="coordinate">X 00 / Y 00</span>
+        </div>
+        <p class="eyebrow hero-kicker">Release intelligence / for engineering teams</p>
+        <h1 id="hero-title"><span>SHIP</span><span>IN CADENCE.</span></h1>
+        <div class="hero-footer">
+          <p>Every deploy already emits evidence—latency, errors, adoption, rollback. Cadence gives that evidence a structure your whole team can read at a glance.</p>
+          <a class="button button-dark" href="#start">Start tracking <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-index" aria-hidden="true">
+          <span>CAD—2.4</span><span>02.08.26</span><span>SELF-HOSTED</span>
+        </div>
+      </section>
+
+      <section class="statement reveal" id="premise" aria-labelledby="statement-title">
+        <p class="section-label">01 / The premise</p>
+        <div>
+          <h2 id="statement-title">A release is a signal,<br />not a surprise.</h2>
+          <p>The evidence exists the moment you deploy. The question is whether anyone can read it before the incident channel does.</p>
+        </div>
+      </section>
+
+      <section class="comparison reveal" aria-labelledby="comparison-title">
+        <div class="comparison-head">
+          <div>
+            <p class="section-label">02 / Diagnostic</p>
+            <h2 id="comparison-title">Read the release,<br />not the release notes.</h2>
+          </div>
+          <div class="view-switch" role="group" aria-label="Comparison view">
+            <button type="button" data-view="before" aria-pressed="true">Notes</button>
+            <button type="button" data-view="after" aria-pressed="false">Console</button>
+          </div>
+        </div>
+
+        <div class="demo" data-state="before">
+          <div class="demo-bar">
+            <span>RELEASE / v2.4.0</span><span>SURFACE STUDY</span><span class="demo-status">NOISE</span>
+          </div>
+          <div class="demo-before" aria-hidden="false">
+            <div class="fake-pill">WHAT'S NEW ✨</div>
+            <h3>We shipped<br />some updates!</h3>
+            <p>Bug fixes and performance improvements you're going to love.</p>
+            <div class="fake-cards"><i></i><i></i><i></i></div>
+          </div>
+          <div class="demo-after" aria-hidden="true">
+            <aside><span>DEPLOY 4821 / main</span><strong>v2.4.0<br />live</strong><small>12 min ago / canary → 100%</small></aside>
+            <div class="lesson-pane">
+              <span class="lesson-number">GREEN</span>
+              <h3>Green<br />across fleet.</h3>
+              <div class="lesson-meta"><span>P95 184MS</span><span>0 ERRORS</span><span>3 REGIONS</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="modes reveal" id="loop" aria-labelledby="modes-title">
+        <div class="modes-intro">
+          <p class="section-label">03 / The loop</p>
+          <h2 id="modes-title">One pipeline.<br />Three jobs.</h2>
+        </div>
+        <ol class="mode-list">
+          <li><span>01</span><div><h3>Capture</h3><p>Ingest deploys, metrics, and flags from CI, your APM, and feature-flag provider—no manual entry.</p></div><b aria-hidden="true">↗</b></li>
+          <li><span>02</span><div><h3>Correlate</h3><p>Tie every symptom to the change that caused it, across services, regions, and rollouts.</p></div><b aria-hidden="true">↗</b></li>
+          <li><span>03</span><div><h3>Announce</h3><p>Publish a human changelog and status the moment a release stabilizes—or auto-rolls back.</p></div><b aria-hidden="true">↗</b></li>
+        </ol>
+      </section>
+
+      <section class="adaptation reveal" id="signals" aria-labelledby="adaptation-title">
+        <header class="adaptation-intro">
+          <p class="section-label section-label-light">04 / Signal range</p>
+          <h2 id="adaptation-title">One method.<br />Every signal.</h2>
+          <p>Illustrative sample data—not a live account. Each panel changes its density while sharing one alignment system.</p>
+        </header>
+        <div class="specimen-grid">
+          <article class="specimen specimen-visible">
+            <header><span>01 / TRACE</span><b>Latency</b></header>
+            <div class="trace-mini" aria-hidden="true"><i></i><p><span>api.checkout</span><b>184 ms</b></p><p><span>db.write</span><b>42 ms</b></p><p><span>cache.hit</span><b>08 ms</b></p></div>
+            <p>Per-route timing surfaces the regression the moment a deploy widens the tail.</p>
+          </article>
+          <article class="specimen specimen-state">
+            <header><span>02 / LEDGER</span><b>Deploys</b></header>
+            <div class="ledger-mini" aria-hidden="true"><p><b>4821</b><span>LIVE / MAIN</span></p><p><b>02</b><span>ROLLED BACK</span></p><i></i></div>
+            <p>Every deploy is an entry: who, what, when, and whether it held.</p>
+          </article>
+          <article class="specimen specimen-invisible">
+            <header><span>03 / CANVAS</span><b>Adoption</b></header>
+            <div class="adoption-mini" aria-hidden="true"><svg viewBox="0 0 120 60" preserveAspectRatio="none" role="presentation"><polyline points="0,52 20,46 40,40 60,26 80,20 100,10 120,4" /></svg><small>FLAG rollout / 72% → 96%</small></div>
+            <p>Watch a flag climb region by region before you commit it to everyone.</p>
+          </article>
+          <article class="specimen specimen-quiet">
+            <header><span>04 / STATE</span><b>Incidents</b></header>
+            <div class="incident-mini" aria-hidden="true"><p><b>184</b><span>SERVICES GREEN</span></p><p class="is-warn"><b>02</b><span>NEEDS ATTENTION</span></p></div>
+            <p>Status stays explicit—recovery paths carry the hierarchy, not color alone.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="system-contract reveal" id="architecture" aria-labelledby="contract-title">
+        <div class="contract-intro">
+          <div><p class="section-label">05 / Architecture</p><h2 id="contract-title">One pipeline.<br />Every source.</h2></div>
+          <p>Cadence 2.4 connects sources, storage, correlation, and delivery before any dashboard is drawn. The pipeline stays proportional to your stack.</p>
+        </div>
+        <div class="contract-flow" aria-label="Cadence data flow">
+          <div><span>01 / Ingest</span><strong>Raw events</strong></div>
+          <div><span>02 / Normalize</span><strong>Unified schema</strong></div>
+          <div><span>03 / Surface</span><strong>Readable signal</strong></div>
+        </div>
+        <div class="contract-grid">
+          <article class="contract-card"><span>Sources</span><strong>Where it starts.</strong><p>CI runs, APM traces, error trackers, and flag providers stream in over webhooks or the CLI.</p><code>ci → apm → flags</code></article>
+          <article class="contract-card"><span>Storage</span><strong>What it keeps.</strong><p>Events land in an append-only store you host—queryable, exportable, and yours to retain.</p><code>append → query → export</code></article>
+          <article class="contract-card"><span>Correlation</span><strong>How it connects.</strong><p>Deploy windows bind metrics to changes, so a spike always has a suspect commit.</p><code>window → bind → suspect</code></article>
+          <article class="contract-card is-state"><span>Delivery</span><strong>Where it lands.</strong><p>Status page, changelog, Slack, and webhooks fire only when a release actually stabilizes.</p><div class="contract-state" aria-label="Example delivery states"><i>Stable</i><i>Watching</i><i>Rollback</i></div></article>
+        </div>
+      </section>
+
+      <section class="proof reveal" aria-labelledby="proof-title">
+        <p class="section-label">06 / Evidence</p>
+        <div class="proof-number" data-count-to="2481">2,481</div>
+        <div class="proof-copy">
+          <h2 id="proof-title">Two thousand deploys.<br />One readable rhythm.</h2>
+          <p>The bundled demo workspace replays a quarter of releases across three services so you can navigate a real-shaped history before connecting a source.</p>
+          <p class="proof-note"><b>Sample data</b> Figures throughout this page are illustrative for the demo workspace and are not customer data.</p>
+          <a href="#start">Explore the demo workspace ↗</a>
+        </div>
+      </section>
+
+      <section class="field-proof reveal" aria-labelledby="field-proof-title">
+        <div><p class="section-label section-label-light">07 / In practice</p><h2 id="field-proof-title">One team.<br />One quarter.</h2><p>An illustrative walkthrough: a four-service team moves from reading release notes to reading the release itself. Time-to-detect drops as correlation replaces guesswork.</p><a href="#start">See the walkthrough ↗</a></div>
+        <div class="field-score" aria-label="Illustrative time-to-detect improved from 42 minutes to 9 minutes"><span>BEFORE</span><b>42<em>m</em></b><i>→</i><b>9<em>m</em></b><span>AFTER</span></div>
+      </section>
+
+      <section class="install reveal" id="start" aria-labelledby="install-title">
+        <p class="section-label section-label-light">08 / Get started</p>
+        <h2 id="install-title">Run it once.<br />Read every release.</h2>
+        <div class="install-grid">
+          <article class="install-primary">
+            <div><span>01 / DOCKER</span><small>RECOMMENDED</small></div>
+            <p>Pull the self-hosted image, point it at your event sources, and open the console on localhost.</p>
+            <div class="command-line"><code id="install-docker">docker run -p 7070:7070 \
+  -v cadence-data:/data cadence/console:2.4</code><button type="button" class="copy-button" data-copy-target="install-docker">Copy</button></div>
+          </article>
+          <article>
+            <div><span>02 / CLI</span><small>SEND EVENTS</small></div>
+            <p>Report a deploy from any CI job.</p>
+            <div class="command-line command-line-small"><code id="install-cli">npx @cadence/cli deploy --service checkout --version 2.4.0</code><button type="button" class="copy-button" data-copy-target="install-cli">Copy</button></div>
+          </article>
+          <article>
+            <div><span>03 / UPDATE</span><small>EXPLICIT</small></div>
+            <p>Pin a tag and upgrade when you choose; updates never run silently.</p>
+            <div class="command-line command-line-small"><code id="install-update">docker pull cadence/console:2.4
+npx @cadence/cli self-update</code><button type="button" class="copy-button" data-copy-target="install-update">Copy</button></div>
+          </article>
+        </div>
+        <div class="install-actions">
+          <a class="button button-light" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+          <p>Sample project<br />MIT licensed</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="wordmark" href="#top">CADENCE®</a>
+      <p>Ship in cadence.</p>
+      <p>© 2026 · MIT · Gridgeist POC</p>
+    </footer>
+  </body>
+</html>
